@@ -48,7 +48,7 @@ CREATE TABLE  `characters` (
   `meta` varchar(255) COLLATE utf8mb4_bin NOT NULL DEFAULT '{}',
   `firstname` varchar(50) COLLATE utf8mb4_bin DEFAULT ' ',
   `lastname` varchar(50) COLLATE utf8mb4_bin DEFAULT ' ',
-  `character_desc` MEDIUMTEXT NOT NULL DEFAULT ' ' COLLATE 'utf8mb4_bin',
+  `character_desc` MEDIUMTEXT COLLATE 'utf8mb4_bin',
   `gender` VARCHAR(50) NOT NULL DEFAULT ' ' COLLATE 'utf8mb4_bin',
   `age` INT(11) NOT NULL DEFAULT '0',
   `nickname` VARCHAR(50) NULL DEFAULT ' ' COLLATE 'utf8mb4_bin',
