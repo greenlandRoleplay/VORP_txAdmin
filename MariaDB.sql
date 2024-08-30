@@ -65,7 +65,7 @@ CREATE TABLE  `characters` (
   `gunsmith` double(11,2) DEFAULT 0.00,
   `ammo` longtext COLLATE utf8mb4_bin DEFAULT '{}',
   `discordid` varchar(255) COLLATE utf8mb4_bin DEFAULT '0',
-  `lastjoined` longtext COLLATE utf8mb4_bin DEFAULT '[]',
+  `lastjoined` longtext COLLATE utf8mb4_bin,
   UNIQUE KEY `identifier_charidentifier` (`identifier`,`charidentifier`) USING BTREE,
   KEY `charidentifier` (`charidentifier`) USING BTREE,
   KEY `crafting` (`crafting`(768)),
