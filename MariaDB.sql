@@ -17,7 +17,7 @@ CREATE TABLE `bank_users` (
   `charidentifier` int(11) NOT NULL,
   `money` double(22,2) DEFAULT 0.00,
   `gold` double(22,2) DEFAULT 0.00,
-  `items` longtext DEFAULT '[]',
+  `items` longtext,
   `invspace` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `name` (`name`),
